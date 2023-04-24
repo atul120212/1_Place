@@ -128,6 +128,7 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       appBar: AppBar(
+        elevation: 0,
         backgroundColor: Colors.pink,
         title: Text('OnePlace'),
         centerTitle: true,
@@ -139,6 +140,47 @@ class _HomePageState extends State<HomePage> {
             ),
           )
         ],
+      ),
+      body: Container(
+        color: Colors.pink,
+        child: SingleChildScrollView(
+          child: Column(children: [
+            Padding(
+              padding: const EdgeInsets.all(30.0),
+              child: Container(
+                child: Image.network(
+                    'https://w0.peakpx.com/wallpaper/975/182/HD-wallpaper-do-more-writing-program-coding-do-more-programing-thumbnail.jpg'),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(30.0),
+              child: Container(
+                child: Container(
+                  child: Image.network(
+                      'https://w0.peakpx.com/wallpaper/896/265/HD-wallpaper-programmer-brainware-code-coding-genius-program-smart-software.jpg'),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(30.0),
+              child: Container(
+                child: Container(
+                  child: Image.network(
+                      'https://w0.peakpx.com/wallpaper/469/148/HD-wallpaper-fullstack-development-nodejs-programmer-technology.jpg'),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(30.0),
+              child: Container(
+                child: Container(
+                  child: Image.network(
+                      'https://cutewallpaper.org/28/coding-iphone-wallpaper/2497816076.jpg'),
+                ),
+              ),
+            ),
+          ]),
+        ),
       ),
     );
   }
