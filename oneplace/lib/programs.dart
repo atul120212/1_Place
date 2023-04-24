@@ -18,8 +18,7 @@ class _ProgramsState extends State<Programs> {
         backgroundColor: Colors.grey[850],
         elevation: 0.0,
       ),
-      body: SafeArea(child: child) ,
-
+      // body: SafeArea(child: child) ,
     );
   }
 }
