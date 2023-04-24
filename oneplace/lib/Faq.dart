@@ -39,6 +39,7 @@ class _faqState extends State<faq> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.pink,
       appBar: AppBar(
         centerTitle: true,
         backgroundColor: Colors.pink,
