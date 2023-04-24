@@ -116,7 +116,7 @@ class _HomePageState extends State<HomePage> {
             ),
             ListTile(
               leading: Icon(Icons.account_box),
-              title: Text("HACKATHONES"),
+              title: Text("NOTIFICATIONS"),
               onTap: () {
                 Navigator.of(context).pop();
                 Navigator.push(

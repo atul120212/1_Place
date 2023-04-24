@@ -14,7 +14,7 @@ class _hackathonState extends State<hackathon> {
       appBar: AppBar(
         backgroundColor: Colors.pink,
         centerTitle: true,
-        title: Text('HACKATHONES'),
+        title: Text('HACKATHONE'),
       ),
     );
   }
