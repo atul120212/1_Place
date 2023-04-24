@@ -10,6 +10,11 @@ class contactus extends StatefulWidget {
 class _contactusState extends State<contactus> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text('Contact us'),
+      ),
+    );
   }
 }
