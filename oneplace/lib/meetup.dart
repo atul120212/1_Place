@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 
-class setting extends StatefulWidget {
-  const setting({super.key});
+class meetup extends StatefulWidget {
+  const meetup({super.key});
 
   @override
-  State<setting> createState() => _settingState();
+  State<meetup> createState() => _meetupState();
 }
 
-class _settingState extends State<setting> {
+class _meetupState extends State<meetup> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.pink,
         centerTitle: true,
-        title: Text('SETTINGS'),
+        title: Text('MEET-UPs'),
       ),
     );
   }

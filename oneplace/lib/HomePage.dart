@@ -3,9 +3,11 @@ import 'package:oneplace/AboutUs.dart';
 import 'package:oneplace/ContactUs.dart';
 import 'package:oneplace/Faq.dart';
 import 'package:oneplace/hackathon.dart';
+import 'package:oneplace/meetup.dart';
+import 'package:oneplace/notification.dart';
 import 'package:oneplace/profile.dart';
-import 'package:oneplace/programs.dart';
 import 'package:oneplace/Ambassador.dart';
+import 'package:oneplace/setting.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -72,12 +74,23 @@ class _HomePageState extends State<HomePage> {
             ),
             ListTile(
               leading: Icon(Icons.switch_account_sharp),
-              title: Text("PROGRAMS"),
+              title: Text("HACKATHON"),
               onTap: () {
                 Navigator.of(context).pop();
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => Programs()),
+                  MaterialPageRoute(builder: (context) => hackathon()),
+                );
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.switch_account_sharp),
+              title: Text("MEET-UPs"),
+              onTap: () {
+                Navigator.of(context).pop();
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => meetup()),
                 );
               },
             ),
@@ -105,12 +118,12 @@ class _HomePageState extends State<HomePage> {
             ),
             ListTile(
               leading: Icon(Icons.local_activity),
-              title: Text("AMBASSADOR"),
+              title: Text("SETTINGS"),
               onTap: () {
                 Navigator.of(context).pop();
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => ambassador()),
+                  MaterialPageRoute(builder: (context) => setting()),
                 );
               },
             ),
@@ -121,7 +134,7 @@ class _HomePageState extends State<HomePage> {
                 Navigator.of(context).pop();
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => hackathon()),
+                  MaterialPageRoute(builder: (context) => notification()),
                 );
               },
             ),
