@@ -12,6 +12,8 @@ class _faqState extends State<faq> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
+        backgroundColor: Colors.pink,
         title: Text('FAQs'),
       ),
     );
