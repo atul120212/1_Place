@@ -11,11 +11,10 @@ class _ProgramsState extends State<Programs> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[500],
       appBar: AppBar(
         title: const Text('Programs'),
         centerTitle: true,
-        backgroundColor: Colors.grey[850],
+        backgroundColor: Colors.pink,
         elevation: 0.0,
       ),
       // body: SafeArea(child: child) ,
