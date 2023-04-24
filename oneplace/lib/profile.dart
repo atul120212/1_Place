@@ -23,7 +23,7 @@ class _ProfileState extends State<Profile> {
               child: Padding(
                 padding: const EdgeInsets.all(20.0),
                 child: CircleAvatar(
-                  backgroundImage: AssetImage('assets/prof.jpg'),
+                  backgroundImage: AssetImage('assets/images/profile.jpg'),
                   radius: 75,
                 ),
               ),

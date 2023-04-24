@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:oneplace/AboutUs.dart';
 import 'package:oneplace/ContactUs.dart';
 import 'package:oneplace/Faq.dart';
+import 'package:oneplace/hackathon.dart';
 import 'package:oneplace/profile.dart';
 import 'package:oneplace/programs.dart';
 import 'package:oneplace/Ambassador.dart';
@@ -40,7 +41,7 @@ class _HomePageState extends State<HomePage> {
                   Expanded(
                     child: Container(
                         child: CircleAvatar(
-                      backgroundImage: AssetImage('assets/icon/icon.png'),
+                      backgroundImage: AssetImage('assets/images/logo.png'),
                       radius: 50,
                     )),
                   ),
@@ -110,6 +111,17 @@ class _HomePageState extends State<HomePage> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => ambassador()),
+                );
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.account_box),
+              title: Text("HACKATHONES"),
+              onTap: () {
+                Navigator.of(context).pop();
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => hackathon()),
                 );
               },
             ),
