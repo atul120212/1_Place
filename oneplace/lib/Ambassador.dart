@@ -10,6 +10,12 @@ class ambassador extends StatefulWidget {
 class _ambassadorState extends State<ambassador> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.pink,
+        centerTitle: true,
+        title: Text('AMBASSADOR'),
+      ),
+    );
   }
 }

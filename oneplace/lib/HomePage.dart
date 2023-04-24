@@ -104,7 +104,7 @@ class _HomePageState extends State<HomePage> {
             ),
             ListTile(
               leading: Icon(Icons.local_activity),
-              title: Text("SETTING"),
+              title: Text("AMBASSADOR"),
               onTap: () {
                 Navigator.of(context).pop();
                 Navigator.push(

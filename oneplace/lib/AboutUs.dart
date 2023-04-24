@@ -14,6 +14,7 @@ class _aboutusState extends State<aboutus> {
       appBar: AppBar(
         centerTitle: true,
         title: Text('ABOUT US'),
+        backgroundColor: Colors.pink,
       ),
     );
   }
