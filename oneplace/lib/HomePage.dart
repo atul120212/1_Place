@@ -23,7 +23,7 @@ class _HomePageState extends State<HomePage> {
           children: [
             DrawerHeader(
               decoration: BoxDecoration(
-                color: Colors.blue,
+                color: Colors.pink,
               ),
               child: Row(
                 children: [
@@ -71,7 +71,7 @@ class _HomePageState extends State<HomePage> {
             ),
             ListTile(
               leading: Icon(Icons.switch_account_sharp),
-              title: Text("STATUS"),
+              title: Text("PROGRAMS"),
               onTap: () {
                 Navigator.of(context).pop();
                 Navigator.push(
